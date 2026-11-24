@@ -1,0 +1,60 @@
+{
+  "title": "Ask by voice",
+  "close": "Close",
+  "speak": "Start speaking",
+  "stop": "Stop",
+  "listening": "Listening",
+  "prompt": "Tap the mic and ask in your language, or type below",
+  "noMic": "Voice isn't available in this browser. Type instead.",
+  "typeLabel": "Or type your question",
+  "ask": "Ask",
+  "go": "Take me there",
+  "tryThese": "Try saying",
+  "dictate": {
+    "start": "Dictate {{field}}",
+    "stop": "Stop dictating {{field}}"
+  },
+  "suggestions": {
+    "health": [
+      "What does my policy cover?",
+      "Start a claim",
+      "What documents are missing?",
+      "Where is my claim?"
+    ],
+    "crop": [
+      "Is hail damage covered?",
+      "Report crop loss",
+      "What documents are missing?",
+      "Where is my claim?"
+    ]
+  },
+  "chat": {
+    "language": "Reply in",
+    "newChat": "New chat",
+    "conversation": "Conversation",
+    "you": "You said",
+    "assistant": "Assistant said",
+    "thinking": "Thinking…",
+    "retry": "Try again",
+    "errorCode": "Error code: {{code}}",
+    "demoNote": "Demo answers. Connect the ClaimSathi backend for the AI assistant in your language.",
+    "errors": {
+      "CHAT_RATE_LIMITED": "Too many questions at once. Wait a minute and try again.",
+      "CHAT_NOT_CONFIGURED": "The assistant isn't set up on the server yet (SARVAM_API_KEY is missing in backend/.env).",
+      "CHAT_PROVIDER_AUTH": "The assistant can't connect to its language service. The Sarvam API key may be wrong or revoked.",
+      "CHAT_PROVIDER_CREDITS": "The assistant's language service is out of credits.",
+      "CHAT_TIMEOUT": "The assistant took too long to answer. Try again.",
+      "CHAT_UNREACHABLE": "The server can't reach the assistant's language service right now.",
+      "CHAT_UNAVAILABLE": "The assistant is busy. Try again in a moment.",
+      "CHAT_BAD_REQUEST": "The assistant couldn't handle that message. Try asking it a different way.",
+      "AUTH_REQUIRED": "Please sign in again to use the assistant.",
+      "AUTH_INVALID": "The server didn't accept your sign-in. Sign in again; if it keeps happening, check SUPABASE_URL in backend/.env.",
+      "AUTH_NOT_CONFIGURED": "The server can't check sign-ins yet: add SUPABASE_URL to backend/.env.",
+      "AUTH_UNAVAILABLE": "The server couldn't check your sign-in just now. Try again.",
+      "VALIDATION_ERROR": "That message couldn't be sent. Keep it under 1,000 characters.",
+      "OFFLINE": "You're offline. Connect to the internet and try again.",
+      "BACKEND_DOWN": "Can't reach the ClaimSathi server. Is the backend running?",
+      "generic": "Something went wrong. Try again."
+    }
+  }
+}

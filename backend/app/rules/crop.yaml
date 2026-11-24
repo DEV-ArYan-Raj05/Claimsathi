@@ -1,0 +1,34 @@
+# Crop track rules (PMFBY localised calamity / post-harvest). PRD §2, §3.3–3.5.
+track: crop
+intimation_window_hours: 72
+score_weights: {completeness: 30, validity: 20, coverage: 25, timeliness: 25}
+checklist:
+  - {code: intimation_docket}
+  - {code: pmfby_policy}
+  - {code: aadhaar_passbook}
+  - {code: geo_photos}
+  - {code: land_record}
+  - {code: sowing_cert}
+  - {code: premium_proof}
+  - {code: claim_form}
+checks:
+  geo_photos:
+    - {code: PHOTO_NOT_GEOTAGGED, severity: critical}
+    - {code: PHOTO_OUTSIDE_72H, severity: high}
+  land_record:
+    - {code: SURVEY_NO_MISMATCH, severity: critical}
+    - {code: LAND_NAME_MISMATCH, severity: high}
+  intimation_docket:
+    - {code: INTIMATION_LATE, severity: critical}
+stages: [loss_reported, intimation_forwarded, surveyor_appointed, joint_survey_done, loss_assessed, approved, payment_initiated, payment_credited]
+draft_stage: null
+submit_stages: [loss_reported]
+insurer_actor: insurer
+# PMFBY: report in 72 h, surveyor within 48 h of intimation, pay within 15 days of survey report.
+deadlines:
+  - {stage: loss_reported, from: event, hours: 72}
+  - {stage: surveyor_appointed, from: loss_reported, hours: 48}
+  - {stage: payment_credited, from: joint_survey_done, hours: 360}
+settlement_stage: payment_credited
+has_overdue_interest: false
+escalation_channels: [district_agri_office, helpline_14447]

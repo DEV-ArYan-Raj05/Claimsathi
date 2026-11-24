@@ -1,0 +1,101 @@
+{
+  "status": {
+    "active": "Active",
+    "expiring_soon": "Expiring soon",
+    "expired": "Expired",
+    "processing": "Reading"
+  },
+  "card": {
+    "sumInsured": "Cover",
+    "expires": "Ends"
+  },
+  "directory": {
+    "title": "Your policies",
+    "subtitle": {
+      "health": "Health and accident policies",
+      "crop": "PMFBY, RWBCIS and state crop schemes"
+    },
+    "add": "Add policy",
+    "filter": "Filter by status",
+    "all": "All",
+    "emptyTitle": "No policies yet",
+    "emptyBody": {
+      "health": "Add your health card or policy paper. A clear photo is enough.",
+      "crop": "Add your PMFBY receipt or policy schedule. A clear photo is enough."
+    },
+    "noMatch": "No policies with this status."
+  },
+  "add": {
+    "title": "Add a policy",
+    "subtitle": {
+      "health": "Photo or PDF of your policy, e-card or schedule",
+      "crop": "Photo or PDF of your PMFBY receipt or schedule"
+    },
+    "uploadTitle": "Upload the policy",
+    "uploadHint": "All pages, flat and in daylight. JPG, PNG, HEIC or PDF, up to 20 MB.",
+    "failed": "Upload failed. Try again.",
+    "reviewWaiting": "Fields will appear here once the policy is read.",
+    "reviewTitle": "Check these details",
+    "pleaseCheck": "AI read this, please check",
+    "invalid": "This doesn't look right",
+    "save": "Save policy"
+  },
+  "field": {
+    "insurer": "Insurer",
+    "policy_no": "Policy / application number",
+    "sum_insured": "Sum insured (₹)",
+    "start_date": "Start date",
+    "end_date": "End date"
+  },
+  "detail": {
+    "subtitle": "{{insurer}}, policy {{no}}",
+    "page": "Page {{page}}",
+    "showQuote": "Show the exact words",
+    "rejectTitle": "What can reject my claim",
+    "rejectBody": "Highest risk first. Each comes from your policy text.",
+    "coverageTitle": "Cover",
+    "period": "Period",
+    "insured": "Insured",
+    "window": "Tell insurer within",
+    "hours": "{{count}} hours",
+    "hours_one": "{{count}} hour",
+    "hours_other": "{{count}} hours",
+    "tpa": "TPA",
+    "original": "Original document",
+    "originalBody": "Opens your uploaded file. Links stay valid for 10 minutes."
+  },
+  "risk": {
+    "high": "High risk",
+    "med": "Medium risk",
+    "low": "Low risk"
+  },
+  "clauseType": {
+    "coverage": "What's covered",
+    "limit": "Limits",
+    "waiting_period": "Waiting periods",
+    "exclusion": "Not covered",
+    "procedure": "How to claim"
+  },
+  "ask": {
+    "title": "Ask this policy",
+    "label": "Your question",
+    "placeholder": "Type or pick a question",
+    "send": "Ask",
+    "failed": "Couldn't get an answer. Try again.",
+    "disclaimer": "Answers come only from your policy. This is not legal advice.",
+    "suggestions": {
+      "health": [
+        "Is accident covered?",
+        "What is the waiting period?",
+        "How much room rent is paid?",
+        "When must I tell the insurer?"
+      ],
+      "crop": [
+        "Is hail damage covered?",
+        "How fast must I report?",
+        "Do photos need location?",
+        "What if premium was late?"
+      ]
+    }
+  }
+}

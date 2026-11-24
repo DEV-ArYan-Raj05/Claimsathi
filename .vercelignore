@@ -1,0 +1,16 @@
+# Not needed to build or run on Vercel (local tooling, caches, secrets, media).
+**/.env
+**/.env.*
+!**/.env.example
+**/node_modules
+**/dist
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+**/.mypy_cache
+**/*.tsbuildinfo
+**/.DS_Store
+*.mov
+docker-compose.yml
+netlify.toml

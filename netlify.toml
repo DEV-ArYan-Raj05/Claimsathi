@@ -1,0 +1,20 @@
+# Netlify: deploy straight from the repo root. Demo mode (no backend) needs no env vars.
+[build]
+  base = "frontend"
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+[[headers]]
+  for = "/sequences/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/architecture"
+  to = "/architecture/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

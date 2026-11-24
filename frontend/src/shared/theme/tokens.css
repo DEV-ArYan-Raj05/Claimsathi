@@ -1,0 +1,42 @@
+/*
+ * The ONLY file allowed to hold colour values (rules.md §2.8, PRD §2).
+ * 60 / 30 / 10: dominant / secondary / accent. `-rgb` triplets feed Tailwind's alpha syntax.
+ */
+:root,
+[data-track="health"] {
+  --color-dominant: #87bfe6; /* sky blue */
+  --color-dominant-rgb: 135 191 230;
+  --color-secondary: #f4f6f8; /* cloud white */
+  --color-secondary-rgb: 244 246 248;
+  --color-accent: #b04a4a; /* muted red */
+  --color-accent-rgb: 176 74 74;
+  --color-ink: #0f2a3d;
+  --color-ink-rgb: 15 42 61;
+  --color-on-dominant: #0f2a3d; /* white fails on sky blue */
+  --color-on-dominant-rgb: 15 42 61;
+  --color-muted: #6b8599;
+  --color-muted-rgb: 107 133 153;
+  --color-success: #2e7d5b;
+  --color-success-rgb: 46 125 91;
+  /* TODO(PRD §2): not in the PRD token list. Text on accent/success fills; crop accent text on
+     beige fails AA (3.4:1), so accent is used as a fill with this text colour instead. */
+  --color-on-accent: #ffffff;
+  --color-on-accent-rgb: 255 255 255;
+}
+
+[data-track="crop"] {
+  --color-dominant: #6b6e4a; /* olive green */
+  --color-dominant-rgb: 107 110 74;
+  --color-secondary: #dfd5c5; /* warm beige */
+  --color-secondary-rgb: 223 213 197;
+  --color-accent: #b5532f; /* terracotta rust */
+  --color-accent-rgb: 181 83 47;
+  --color-ink: #2b2c1e;
+  --color-ink-rgb: 43 44 30;
+  --color-on-dominant: #ffffff;
+  --color-on-dominant-rgb: 255 255 255;
+  --color-muted: #8a8670;
+  --color-muted-rgb: 138 134 112;
+  --color-success: #4f7a3a;
+  --color-success-rgb: 79 122 58;
+}

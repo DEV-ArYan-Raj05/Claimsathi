@@ -1,0 +1,151 @@
+{
+ "user": {
+  "title": "User",
+  "what": "Farmers on low-end Android over 3G, domestic workers, and helpers (CSC operators, NGO volunteers) filing for someone else. Mobile-first at 360 px, Hindi + English.",
+  "ref": "PRD §1 Users",
+  "status": "—"
+ },
+ "pages": {
+  "title": "Pages (React Router v6)",
+  "what": "One page per screen ID (S-01…S-03, x-01…x-11). Routes are /{track}/… so one codebase serves both tracks; TrackGate validates :track and sets data-track on <html>. Every page is lazy-loaded.",
+  "files": "frontend/src/app/router.tsx, features/*/routes.tsx, features/*/pages/",
+  "ref": "rules.md §3.2, §7 Routing",
+  "status": "Built"
+ },
+ "query": {
+  "title": "TanStack Query",
+  "what": "All server data lives here, never in Zustand. Claim detail polls while a document is being checked; job progress polls GET /jobs/{id}.",
+  "files": "features/*/hooks/*.ts, shared/hooks/useJob.ts",
+  "ref": "rules.md §7 Data access",
+  "status": "Built"
+ },
+ "apiclient": {
+  "title": "apiClient",
+  "what": "The only place that does HTTP. Adds the Supabase JWT, maps errors to the one error shape. If VITE_API_BASE_URL is empty it hands the request to the in-browser demo server instead, with identical paths and response shapes.",
+  "files": "shared/lib/apiClient.ts, shared/api/contract.ts",
+  "ref": "PRD §6.2, rules.md §8 API conventions",
+  "status": "Built"
+ },
+ "fastapi": {
+  "title": "FastAPI",
+  "what": "Python 3.12 API, feature-first. Today: track rules loader, readiness score, deadline maths, document check registry, bill totals, letter templates + number post-check, WhatsApp webhook with Twilio signature check. All tested.",
+  "files": "backend/app/",
+  "ref": "PRD §5.2, rules.md §8",
+  "status": "Core logic built · /api/v1 routers + DB still TODO"
+ },
+ "zustand": {
+  "title": "Zustand",
+  "what": "Client-only preferences: last track and UI language, persisted to localStorage inside try/catch.",
+  "files": "shared/lib/prefs.ts",
+  "ref": "rules.md §7",
+  "status": "Built"
+ },
+ "i18n": {
+  "title": "i18next",
+  "what": "One namespace per feature, English and Hindi, generated with matching key sets. Server text arrives bilingual ({en, hi}) and is picked by useLang().",
+  "files": "src/locales/{en,hi}/*.json, shared/i18n/index.ts",
+  "ref": "rules.md §2.7, §17",
+  "status": "Built"
+ },
+ "demo": {
+  "title": "Demo server (in-browser)",
+  "what": "Implements every PRD §6.2 endpoint the UI calls, on seeded demo data (Sunita's health claims, Ramesh's crop claims), persisted in localStorage. Lets judges click through with no backend. Scores, deadlines and totals are computed in code, mirroring the Python services.",
+  "files": "shared/lib/demo/*",
+  "ref": "PRD §7.4 demo script",
+  "status": "Built · demo only"
+ },
+ "sequence": {
+  "title": "ScrollSequence",
+  "what": "Apple-style scroll-linked canvas animation on x-01: tractor frames for Crop, MRI frames for Health. Preloads, 400vh sticky container, rAF, repaints only on frame change, half the frames under 768 px, one static frame under reduced motion or <4 GB RAM.",
+  "files": "shared/components/ScrollSequence.tsx, public/sequences/{tractor,mri}/",
+  "ref": "PRD §4.4, user brief",
+  "status": "Built"
+ },
+ "tokens": {
+  "title": "Theme tokens",
+  "what": "60/30/10 colour tokens per track as CSS variables, switched by data-track. Tailwind maps every colour to a variable; components never contain hex.",
+  "files": "shared/theme/tokens.css, tailwind.config.ts, DESIGN.md",
+  "ref": "PRD §2, rules.md §2.8",
+  "status": "Built · on-accent token pending PRD approval"
+ },
+ "supabasejs": {
+  "title": "supabase-js",
+  "what": "Google OAuth (openid email profile), WhatsApp OTP sign-in, and phone_change verification run in the browser. Lazy-loaded so it stays out of the first bundle.",
+  "files": "shared/lib/session.ts",
+  "ref": "PRD §3.7, rules.md §11",
+  "status": "Wired · needs Supabase project + keys"
+ },
+ "supaauth": {
+  "title": "Supabase Auth",
+  "what": "Issues the JWT FastAPI verifies. WhatsApp OTP goes through Twilio (the only WhatsApp provider Supabase supports).",
+  "ref": "PRD §3.7",
+  "status": "Config in Supabase dashboard"
+ },
+ "spa": {
+  "title": "React SPA on Vercel",
+  "what": "Static build with an SPA rewrite in vercel.json; frame sequences cached immutable. Initial JS ≈127 KB gzipped.",
+  "files": "frontend/",
+  "ref": "rules.md §5 Deploy targets",
+  "status": "Built"
+ },
+ "postgres": {
+  "title": "Supabase Postgres",
+  "what": "Every user-owned row has user_id and track; RLS on every table; claim_stages is append-only; money numeric(12,2); timestamps timestamptz UTC.",
+  "ref": "PRD §6.1, rules.md §8 Database",
+  "status": "TODO: models + Alembic migrations"
+ },
+ "storage": {
+  "title": "Supabase Storage",
+  "what": "Private buckets for policies, bills and photos. Browser uploads via signed URL from POST /files/upload-url; read links last 10 minutes.",
+  "files": "backend/app/providers/storage/base.py",
+  "ref": "rules.md §10",
+  "status": "Interface only"
+ },
+ "auth": {
+  "title": "Supabase Auth",
+  "what": "Browser signs in directly (Google / WhatsApp OTP). FastAPI only verifies the JWT and, after phone_change, confirms the number belongs to this user.",
+  "files": "backend/app/core/auth.py",
+  "ref": "PRD §3.7",
+  "status": "JWT check built"
+ },
+ "redis": {
+  "title": "Redis + RQ",
+  "what": "Anything slow (OCR, extraction, checks, PDF) is a job; the API returns {job_id} within 2 s and the client polls.",
+  "ref": "rules.md §8 'Long work'",
+  "status": "TODO"
+ },
+ "worker": {
+  "title": "Worker",
+  "what": "Same Docker image as the API. Runs extract_policy, check_document, build_pack and notify_claim_update, then writes results back.",
+  "ref": "PRD §7.1",
+  "status": "TODO"
+ },
+ "ocr": {
+  "title": "Google Cloud Vision",
+  "what": "Handwriting OCR for Hindi + English bills. Aadhaar is masked before any image leaves our system.",
+  "files": "providers/ocr/base.py (+ fake.py)",
+  "ref": "PRD §5.2",
+  "status": "Interface + fake"
+ },
+ "llm": {
+  "title": "Claude (Anthropic)",
+  "what": "Tool-use / JSON-schema only, temperature 0 for extraction. Every field carries page + quote; quotes must string-match the OCR text. Vision answers yes/no only. Never computes money or dates, never promises approval.",
+  "files": "providers/llm/base.py",
+  "ref": "rules.md §9",
+  "status": "Interface"
+ },
+ "voice": {
+  "title": "Sarvam AI",
+  "what": "Indian-language speech-to-text and text-to-speech for the voice sheet and reminder calls. The frontend uses the browser's speech API until this is wired.",
+  "files": "providers/voice/base.py",
+  "ref": "PRD §3.6",
+  "status": "Interface"
+ },
+ "twilio": {
+  "title": "Twilio",
+  "what": "WhatsApp templates (en + hi), SMS fallback, reminder calls. Callbacks hit POST /webhooks/whatsapp, which verifies the signature.",
+  "files": "providers/telephony/base.py, features/whatsapp/",
+  "ref": "PRD §3.6, §3.8, rules.md §12",
+  "status": "Webhook + rules built · sending TODO"
+ }
+}

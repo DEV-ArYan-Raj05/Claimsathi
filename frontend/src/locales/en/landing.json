@@ -1,0 +1,45 @@
+{
+  "signIn": "Sign in",
+  "openApp": "Open app",
+  "hero": {
+    "title": "Claims fail on paperwork. We fix the paperwork.",
+    "body": "ClaimSathi reads your policy, checks every bill and photo for what insurers reject, and builds a claim you can send today, in Hindi or English."
+  },
+  "tracks": {
+    "label": "Choose your insurance",
+    "health": {
+      "name": "Health and accident",
+      "hero": "Your treatment bills, claim-ready.",
+      "a": "Finds missing stamps, signatures and doctor registration numbers",
+      "b": "Adds up every bill so totals match",
+      "c": "Writes the claim letter for your insurer or TPA",
+      "cta": "Start with health"
+    },
+    "crop": {
+      "name": "Crop (PMFBY and state schemes)",
+      "hero": "Crop damaged? Report within 72 hours.",
+      "a": "Counts down the 72 hours from the moment of damage",
+      "b": "Checks your field photos carry location and time",
+      "c": "Follows the claim from survey to bank credit",
+      "cta": "Start with crop"
+    }
+  },
+  "how": {
+    "title": "How it works",
+    "read": {
+      "title": "Upload your policy once",
+      "body": "A photo or PDF is enough. We pull out what's covered, what isn't, the limits and the deadlines, with the page each one came from."
+    },
+    "check": {
+      "title": "Add bills or field photos",
+      "body": "Every document is checked for what gets claims rejected, and you're told exactly how to fix each problem before you send."
+    },
+    "track": {
+      "title": "Send, then follow it",
+      "body": "Get a ready letter and checklist. Then see each stage, the date the insurer must act by, and what to do if they're late."
+    }
+  },
+  "footer": {
+    "disclaimer": "ClaimSathi helps you prepare and track claims. It does not file claims into insurer systems, does not give legal advice, and cannot promise that a claim will be approved."
+  }
+}

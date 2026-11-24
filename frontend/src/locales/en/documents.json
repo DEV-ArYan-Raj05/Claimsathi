@@ -1,0 +1,64 @@
+{
+  "title": "Documents and checks",
+  "subtitle": {
+    "health": "Claim for {{subject}}",
+    "crop": "{{subject}} loss claim"
+  },
+  "item": {
+    "claim_form": "Signed claim form",
+    "policy_copy": "Policy copy or e-card",
+    "id_bank_proof": "ID proof and cancelled cheque or passbook",
+    "bills": "Original bills with receipts",
+    "prescriptions": "Prescriptions and pharmacy bills",
+    "discharge_summary": "Discharge summary",
+    "investigation_reports": "Test and investigation reports",
+    "fir_mlc": "FIR or MLC (accidents only)",
+    "intimation_docket": "Loss intimation docket number",
+    "pmfby_policy": "PMFBY application or policy",
+    "aadhaar_passbook": "Aadhaar and bank passbook",
+    "geo_photos": "Geotagged photos of the damaged field",
+    "land_record": "Land record (Khasra / Khatauni / Jamabandi)",
+    "sowing_cert": "Sowing certificate or crop declaration",
+    "premium_proof": "Premium payment proof"
+  },
+  "countdown": {
+    "health": "{{hours}} h {{minutes}} m left to tell the insurer",
+    "crop": "{{hours}} h {{minutes}} m left to report this loss"
+  },
+  "fix": {
+    "claim_form": "Get the insurer's claim form, sign it and upload a photo",
+    "id_bank_proof": "Upload your Aadhaar or PAN and a cancelled cheque",
+    "discharge_summary": "Ask the hospital for the discharge summary",
+    "intimation_docket": "Report the loss (app, 14447, bank or agri office) and add the docket number",
+    "aadhaar_passbook": "Upload Aadhaar and the first page of your passbook",
+    "sowing_cert": "Get a sowing certificate from the patwari or agri office",
+    "premium_proof": "Upload the bank entry showing the premium debit"
+  },
+  "alerts": {
+    "title": "{{count}} things to fix",
+    "title_one": "{{count}} thing to fix",
+    "title_other": "{{count}} things to fix",
+    "allClear": "Nothing to fix. Every document passed its checks.",
+    "missing": "{{item}} not uploaded",
+    "missingFix": "Upload a clear photo or PDF",
+    "reupload": "Upload a fixed copy"
+  },
+  "override": {
+    "open": "Send anyway with a reason",
+    "label": "Reason",
+    "placeholder": "Why is this okay to send?",
+    "save": "Save reason",
+    "cancel": "Cancel"
+  },
+  "checklist": {
+    "title": "Checklist",
+    "required": "Required",
+    "optional": "Only if it applies",
+    "checking": "Checking",
+    "passed": "{{passed}} of {{total}} checks passed"
+  },
+  "next": {
+    "body": "When the checklist looks right, see the claim pack: the letter, form and bill summary.",
+    "cta": "See claim pack"
+  }
+}

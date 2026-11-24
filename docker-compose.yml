@@ -1,0 +1,15 @@
+# Local dev: API + worker + Redis. Values come from backend/.env (see .env.example).
+services:
+  api:
+    build: ./backend
+    env_file: ./backend/.env
+    ports: ["8000:8000"]
+    depends_on: [redis]
+  worker:
+    build: ./backend
+    env_file: ./backend/.env
+    # TODO(PRD §5.2): RQ worker entrypoint once jobs are registered in app/workers/registry.py
+    command: ["python", "-c", "print('worker not wired yet')"]
+    depends_on: [redis]
+  redis:
+    image: redis:7-alpine

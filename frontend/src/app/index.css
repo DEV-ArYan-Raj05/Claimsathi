@@ -1,0 +1,54 @@
+@import "@fontsource/mukta/400.css";
+@import "@fontsource/mukta/500.css";
+@import "@fontsource/mukta/700.css";
+@import "@fontsource/mukta/800.css";
+@import "../shared/theme/tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-dominant font-sans text-on-dominant antialiased;
+    line-height: 1.55;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-ink);
+    outline-offset: 2px;
+  }
+  [data-track="crop"] .on-dominant :focus-visible {
+    outline-color: var(--color-on-dominant);
+  }
+  h1,
+  h2,
+  h3 {
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  /* Captions: muted fails AA as text, so captions use ink at reduced strength. */
+  .text-caption {
+    color: rgb(var(--color-ink-rgb) / 0.72);
+  }
+  .text-caption-on-dominant {
+    color: rgb(var(--color-on-dominant-rgb) / 0.92);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

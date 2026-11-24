@@ -1,0 +1,94 @@
+{
+  "track": {
+    "health": "स्वास्थ्य",
+    "crop": "फ़सल",
+    "switcherLabel": "बीमे का प्रकार चुनें"
+  },
+  "language": {
+    "switchTo": "अंग्रेज़ी में बदलें",
+    "other": "English"
+  },
+  "nav": {
+    "main": "मुख्य",
+    "home": "होम",
+    "policies": "पॉलिसी",
+    "claims": "क्लेम",
+    "voice": "आवाज़",
+    "settings": "सेटिंग्स",
+    "skip": "सामग्री पर जाएँ"
+  },
+  "action": {
+    "retry": "फिर कोशिश करें",
+    "back": "वापस"
+  },
+  "state": {
+    "errorTitle": "यह लोड नहीं हुआ",
+    "errorBody": "हमारी तरफ़ कुछ गड़बड़ हुई। आपका डेटा सुरक्षित है।",
+    "offlineTitle": "आप ऑफ़लाइन हैं",
+    "offlineBody": "इंटरनेट से जुड़ें और फिर कोशिश करें।",
+    "offlineBanner": "इंटरनेट नहीं है। अपलोड रुके रहेंगे और नेटवर्क आने पर भेजे जाएँगे।"
+  },
+  "sequence": {
+    "loading": "चित्र लोड हो रहा है",
+    "step": "{{total}} में से {{n}}"
+  },
+  "score": {
+    "aria": "तैयारी स्कोर 100 में से {{score}}",
+    "band": {
+      "ready": "भेजने के लिए तैयार",
+      "fix": "कुछ चीज़ें ठीक करें",
+      "high_risk": "अस्वीकार होने का ख़तरा ज़्यादा"
+    }
+  },
+  "countdown": {
+    "overdue": "समय-सीमा {{hours}} घं {{minutes}} मि पहले निकल गई"
+  },
+  "stage": {
+    "draft_prepared": "ड्राफ़्ट तैयार",
+    "documents_verified": "ऐप ने दस्तावेज़ जाँचे",
+    "submitted": "बीमा कंपनी को भेजा",
+    "acknowledged": "प्राप्ति मिली",
+    "under_review": "जाँच चल रही है",
+    "query_raised": "सवाल पूछा गया",
+    "decision": "फ़ैसला",
+    "approved": "मंज़ूर",
+    "rejected": "अस्वीकार",
+    "payment_credited": "पैसा जमा हुआ",
+    "loss_reported": "नुकसान की सूचना दी",
+    "intimation_forwarded": "सूचना आगे भेजी गई",
+    "surveyor_appointed": "सर्वेयर नियुक्त",
+    "joint_survey_done": "संयुक्त सर्वे हुआ",
+    "loss_assessed": "नुकसान का आकलन",
+    "payment_initiated": "बैंक / DBT से भुगतान",
+    "overdue": "समय-सीमा पार",
+    "not_started": "शुरू नहीं हुआ"
+  },
+  "severity": {
+    "critical": "ज़रूर ठीक करें",
+    "high": "ठीक करना चाहिए",
+    "medium": "जाँच लें",
+    "missing": "नहीं है"
+  },
+  "alerts": {
+    "overridden": "फिर भी भेजा: {{reason}}"
+  },
+  "job": {
+    "canLeave": "आप यह स्क्रीन छोड़ सकते हैं। काम चलता रहेगा और नतीजा यहीं दिखेगा।",
+    "step": {
+      "reading": "पन्ने पढ़ रहे हैं",
+      "extracting": "शर्तें और सीमाएँ ढूँढ रहे हैं",
+      "review": "आपकी जाँच के लिए तैयार",
+      "checking": "मुहर, हस्ताक्षर और जोड़ जाँच रहे हैं",
+      "building": "क्लेम पैक बना रहे हैं"
+    }
+  },
+  "upload": {
+    "camera": "फ़ोटो लें",
+    "file": "फ़ाइल चुनें",
+    "waiting": "{{name}} नेटवर्क का इंतज़ार कर रहा है",
+    "problem": {
+      "too_large": "यह फ़ाइल 20 MB से बड़ी है। इसकी जगह फ़ोटो लें।",
+      "unsupported": "JPG, PNG, HEIC फ़ोटो या PDF इस्तेमाल करें।"
+    }
+  }
+}

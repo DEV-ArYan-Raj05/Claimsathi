@@ -1,0 +1,69 @@
+{
+  "title": "Claim pack",
+  "subtitle": "Check the letter, then send it yourself. We never file on your behalf.",
+  "warning": "A rule in your policy may affect this claim",
+  "letter": {
+    "title": "Claim letter",
+    "language": "Letter language",
+    "lang": {
+      "en": "English",
+      "hi": "हिंदी"
+    }
+  },
+  "bills": {
+    "title": "Bill summary",
+    "none": "No bills in this claim.",
+    "provider": "From",
+    "date": "Date",
+    "amount": "Amount",
+    "no": "Bill no. {{no}}",
+    "total": "Total claimed"
+  },
+  "form": {
+    "title": "Claim form fields",
+    "field": {
+      "insured_name": "Insured name",
+      "policy_no": "Policy / application no.",
+      "patient": "Patient",
+      "hospital": "Hospital",
+      "admission_date": "Admitted",
+      "discharge_date": "Discharged",
+      "diagnosis": "Illness / injury",
+      "is_accident": "Accident",
+      "crop": "Crop",
+      "season": "Season",
+      "survey_no": "Survey no.",
+      "area_ha": "Area (ha)",
+      "cause": "Cause",
+      "event_date": "Date of event",
+      "amount_claimed": "Amount claimed",
+      "bank_account": "Bank account"
+    },
+    "value": {
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "enclosures": {
+    "title": "Enclosures",
+    "attached": "attached",
+    "missing": "not attached"
+  },
+  "send": {
+    "title": "Send",
+    "cta": "Send to insurer",
+    "blocked": "{{count}} must-fix problems are still open.",
+    "blocked_one": "{{count}} must-fix problem is still open.",
+    "blocked_other": "{{count}} must-fix problems are still open.",
+    "fix": "Fix them",
+    "howItWorks": "This opens your email app with the letter addressed to {{email}}. Attach the files from your phone before sending.",
+    "subject": "Claim under policy {{no}}"
+  },
+  "actions": {
+    "print": "Print or save PDF",
+    "copyEmail": "Copy insurer email",
+    "copied": "Copied",
+    "whatsapp": "Share on WhatsApp",
+    "shareText": "My claim pack for policy {{no}} is ready on ClaimSathi."
+  }
+}

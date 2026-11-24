@@ -1,0 +1,11 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+PyYAML==6.0.2
+Jinja2==3.1.5
+PyJWT==2.10.1
+cryptography==46.0.7  # ES256/RS256 verification of Supabase access tokens (core/auth.py)
+python-multipart==0.0.20
+sarvamai==0.1.49  # Sarvam AI chat + translation (providers/sarvam.py), PRD §3.6
+httpx==0.28.1  # imported for SDK network-error handling (was dev-only)

@@ -1,0 +1,56 @@
+{
+  "title": "Profile and settings",
+  "language": {
+    "title": "Language",
+    "en": "English",
+    "hi": "हिंदी"
+  },
+  "bank": {
+    "title": "Bank account",
+    "masked": "Account ending {{last4}}",
+    "none": "No bank account added",
+    "note": "We store only the last 4 digits. The full number appears only inside your claim PDF."
+  },
+  "members": {
+    "title": "Family members (health)",
+    "name": "Name",
+    "relation": "Relation",
+    "add": "Add member"
+  },
+  "relation": {
+    "self": "self",
+    "son": "son",
+    "daughter": "daughter",
+    "spouse": "spouse",
+    "mother": "mother",
+    "father": "father"
+  },
+  "parcels": {
+    "title": "Land parcels (crop)",
+    "line": "Khasra {{survey}}, {{village}}, {{district}}: {{area}} ha",
+    "survey_no": "Survey / khasra no.",
+    "village": "Village",
+    "district": "District",
+    "area_ha": "Area (ha)",
+    "add": "Add parcel"
+  },
+  "whatsapp": {
+    "title": "WhatsApp and calls",
+    "optIn": "Send claim updates on WhatsApp",
+    "stopHint": "Reply STOP on WhatsApp at any time to turn this off."
+  },
+  "calls": {
+    "consent": "Call me with deadline reminders",
+    "hint": "Plays a short message in your language."
+  },
+  "account": {
+    "title": "Account and data",
+    "linkGoogle": "Link Google account",
+    "export": "Download my data",
+    "signOut": "Sign out",
+    "delete": "Delete all my data",
+    "deleteConfirm": "This permanently deletes your policies, claims and files. It can't be undone.",
+    "deleteYes": "Delete everything",
+    "deleteNo": "Keep my data"
+  }
+}

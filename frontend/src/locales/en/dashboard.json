@@ -1,0 +1,66 @@
+{
+  "greeting": "Namaste, {{name}}",
+  "friend": "friend",
+  "skipStory": "Skip to my dashboard",
+  "title": {
+    "health": "Your health claims",
+    "crop": "Your crop claims"
+  },
+  "countdown": {
+    "health": "{{hours}} h {{minutes}} m left to tell the insurer",
+    "crop": "{{hours}} h {{minutes}} m left to report your crop loss"
+  },
+  "verifyBanner": "Verify your WhatsApp number to get updates when your claim moves.",
+  "verifyLink": "Verify now",
+  "activePolicies": "Active policies",
+  "seePolicies": "See policies",
+  "openClaims": "Open claims",
+  "seeClaims": "See claims",
+  "nextSettlement": "Next decision due {{date}}",
+  "averageScore": "Average readiness",
+  "noScore": "No claims yet",
+  "start": {
+    "health": {
+      "title": "Had treatment recently?",
+      "body": "Start a claim and we'll tell you which bills and papers you need.",
+      "cta": "Start a claim"
+    },
+    "crop": {
+      "title": "Crop damaged?",
+      "body": "Report it within 72 hours. We'll tell you which photos and papers to send.",
+      "cta": "Report loss now"
+    }
+  },
+  "story": {
+    "health": {
+      "alt": "Line drawing of an MRI machine coming apart into its parts as you scroll",
+      "0": {
+        "title": "Your treatment, taken apart",
+        "body": "Every bill, prescription and report is one piece of your claim."
+      },
+      "1": {
+        "title": "Each piece gets checked",
+        "body": "Clinic stamp, doctor's signature and registration number, and totals that add up."
+      },
+      "2": {
+        "title": "Put back together, ready to send",
+        "body": "A letter, the insurer's form and a checklist, before you submit anything."
+      }
+    },
+    "crop": {
+      "alt": "Line drawing of a tractor coming apart into its parts as you scroll",
+      "0": {
+        "title": "Your loss, piece by piece",
+        "body": "Field photos, land record, sowing certificate: each one is a part of the claim."
+      },
+      "1": {
+        "title": "Each part gets checked",
+        "body": "Location on every photo, the 72-hour window, your khasra number against the policy."
+      },
+      "2": {
+        "title": "Report on time, then follow it",
+        "body": "We count down the 72 hours and track the claim until money reaches your bank."
+      }
+    }
+  }
+}

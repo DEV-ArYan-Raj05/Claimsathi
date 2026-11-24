@@ -1,0 +1,22 @@
+To,
+The Claims Department,
+{{ insurer }}{% if tpa %} / {{ tpa }}{% endif %}
+{{ insurer_email }}
+
+Date: {{ today }}
+
+Subject: Crop loss claim under PMFBY application / policy no. {{ policy_no }}
+
+Dear Sir or Madam,
+
+I, {{ name }}, hold policy no. {{ policy_no }} ({{ product }}) with you. {{ narrative }}
+
+This is covered under "{{ clause_title }}" (page {{ clause_page }} of the policy). I am claiming {{ amount }} as assessed against the enclosed documents.
+
+Enclosures:
+{% for e in enclosures %}{{ loop.index }}. {{ e }}
+{% endfor %}
+Please credit the amount to my bank account ending {{ bank_last4 }}; full details are in the enclosed claim form.
+
+Yours faithfully,
+{{ name }}

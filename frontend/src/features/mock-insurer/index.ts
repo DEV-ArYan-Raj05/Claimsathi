@@ -1,0 +1,1 @@
+export { mockInsurerRoutes } from "./routes";

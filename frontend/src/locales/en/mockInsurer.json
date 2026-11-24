@@ -1,0 +1,13 @@
+{
+  "title": "Mock insurer console",
+  "note": "Demo only. Moves claims through stages so the tracker updates live. Not available in production.",
+  "track": {
+    "health": "Health claims",
+    "crop": "Crop claims"
+  },
+  "response": "Insurer's response (optional)",
+  "amount": "Approved amount",
+  "advance": "Move to next stage",
+  "raiseQuery": "Raise a query",
+  "defaultQuery": "Please send the original bill"
+}

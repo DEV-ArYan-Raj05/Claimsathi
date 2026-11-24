@@ -1,0 +1,79 @@
+{
+  "field": {
+    "policy_id": "Policy",
+    "patient": "Patient",
+    "hospital": "Hospital or clinic",
+    "admission_date": "Admission date",
+    "discharge_date": "Discharge date",
+    "diagnosis": "Illness or injury",
+    "is_accident": "This was an accident",
+    "event_at": "When did it happen?",
+    "crop": "Crop",
+    "season": "Season",
+    "survey_no": "Survey / khasra number",
+    "area_ha": "Area damaged (hectares)",
+    "cause": "Cause of damage",
+    "amount_claimed": {
+      "health": "Total of your bills (₹)",
+      "crop": "Estimated loss (₹)"
+    }
+  },
+  "hint": {
+    "event_at": "Date and time. Deadlines are counted from this.",
+    "survey_no": "As written on your land record",
+    "amount_claimed": {
+      "health": "We'll check it against the bills you upload.",
+      "crop": "Your best estimate. The surveyor decides the final amount."
+    }
+  },
+  "option": {
+    "kharif": "Kharif",
+    "rabi": "Rabi",
+    "hailstorm": "Hailstorm",
+    "unseasonal_rain": "Unseasonal rain",
+    "flood": "Flood or waterlogging",
+    "pest": "Pest attack",
+    "fire": "Natural fire",
+    "landslide": "Landslide"
+  },
+  "form": {
+    "choose": "Choose",
+    "required": "Fill this in",
+    "amount": "Enter an amount like 12500",
+    "failed": "Couldn't save the claim. Try again."
+  },
+  "new": {
+    "title": {
+      "health": "Start a claim",
+      "crop": "Report crop loss"
+    },
+    "subtitle": {
+      "health": "Tell us about the treatment. You can dictate any field.",
+      "crop": "Tell us what happened. The 72 hours count from the time of damage."
+    },
+    "noPolicyTitle": "Add a policy first",
+    "noPolicyBody": "A claim needs an active policy to claim against.",
+    "addPolicy": "Add policy",
+    "next": "Next: documents"
+  },
+  "warning": {
+    "title": "Before you go on",
+    "lead": "Your policy has a rule that may affect this claim",
+    "page": "(page {{page}})",
+    "continue": "Continue anyway",
+    "stop": "Stop for now"
+  },
+  "list": {
+    "title": "Your claims",
+    "draft": "Draft",
+    "event": "Event on {{date}}",
+    "amount": "Amount",
+    "expected": "Expected by",
+    "readiness": "Readiness",
+    "emptyTitle": "No claims yet",
+    "emptyBody": {
+      "health": "When you've had treatment, start a claim here.",
+      "crop": "If your crop is damaged, report it here within 72 hours."
+    }
+  }
+}

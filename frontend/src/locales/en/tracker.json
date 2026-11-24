@@ -1,0 +1,65 @@
+{
+  "title": "Claim {{ref}}",
+  "noRef": "(no number yet)",
+  "byOn": "{{actor}}, {{date}}",
+  "dueBy": "Due by {{date}}",
+  "overdueBy": "{{count}} days overdue",
+  "overdueBy_one": "{{count}} day overdue",
+  "overdueBy_other": "{{count}} days overdue",
+  "actor": {
+    "user": "You",
+    "app": "ClaimSathi",
+    "insurer": "Insurer",
+    "tpa": "TPA",
+    "govt": "Agriculture dept",
+    "bank": "Bank"
+  },
+  "verifyBanner": "Verify your WhatsApp number to get a message each time this claim moves.",
+  "verifyLink": "Verify now",
+  "settlement": {
+    "title": "Expected settlement",
+    "approved": "Approved amount",
+    "claimed": "Amount claimed",
+    "dueBy": "Insurer must act by {{date}}",
+    "noDate": "The date appears once the claim is sent.",
+    "basis": "Based on regulation: health claims within 30 days of the last document; crop claims within 15 days of the survey report."
+  },
+  "escalation": {
+    "title": "{{count}} days past the deadline",
+    "title_one": "{{count}} day past the deadline",
+    "title_other": "{{count}} days past the deadline",
+    "body": "You can escalate. We've written the letter for you.",
+    "open": "Show escalation letter",
+    "where": "Send it to",
+    "copy": "Copy letter",
+    "copied": "Copied",
+    "loading": "Preparing the letter"
+  },
+  "channel": {
+    "grievance_cell": "Insurer's grievance cell",
+    "bima_bharosa": "Bima Bharosa (IRDAI)",
+    "district_agri_office": "District agriculture office",
+    "helpline_14447": "Crop insurance helpline 14447"
+  },
+  "update": {
+    "title": "Update status",
+    "pasteLabel": "Paste the insurer's SMS or email (optional)",
+    "pasteHint": "We'll suggest the stage. Nothing is sent anywhere.",
+    "suggest": "Suggest stage",
+    "suggested": "Looks like: {{stage}}",
+    "noSuggestion": "Couldn't tell the stage. Pick it below.",
+    "stageLabel": "New stage",
+    "choose": "Choose a stage",
+    "save": "Save update"
+  },
+  "whatsapp": {
+    "title": "WhatsApp updates sent",
+    "status": {
+      "queued": "queued",
+      "sent": "sent",
+      "delivered": "delivered",
+      "read": "read",
+      "failed": "failed, sent by SMS"
+    }
+  }
+}

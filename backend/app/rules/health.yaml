@@ -1,0 +1,44 @@
+# Health track rules (PRD §2, §3.3–3.5). Track behaviour lives here, never in `if track ==`.
+# Mirrored for the offline demo in frontend/src/shared/config/tracks.ts — keep both in step.
+track: health
+intimation_window_hours: 48
+score_weights: {completeness: 35, validity: 30, coverage: 20, timeliness: 15}
+checklist:
+  - {code: claim_form}
+  - {code: policy_copy}
+  - {code: id_bank_proof}
+  - {code: bills}
+  - {code: prescriptions}
+  - {code: discharge_summary}
+  - {code: investigation_reports}
+  - {code: fir_mlc, required_when: is_accident}
+checks:
+  bills:
+    - {code: BILL_STAMP_MISSING, severity: critical}
+    - {code: BILL_SIGNATURE_MISSING, severity: critical}
+    - {code: DOCTOR_REG_MISSING, severity: critical}
+    - {code: PROVIDER_MISSING, severity: high}
+    - {code: PATIENT_NAME_MISMATCH, severity: critical}
+    - {code: BILL_DATE_OUTSIDE_POLICY, severity: critical}
+    - {code: BILL_NUMBER_MISSING, severity: medium}
+    - {code: BILL_TOTAL_MISMATCH, severity: high}
+    - {code: LOW_LEGIBILITY, severity: medium}
+    - {code: DUPLICATE_BILL, severity: high}
+  prescriptions:
+    - {code: DOCTOR_REG_MISSING, severity: critical}
+    - {code: BILL_SIGNATURE_MISSING, severity: critical}
+    - {code: PATIENT_NAME_MISMATCH, severity: critical}
+    - {code: LOW_LEGIBILITY, severity: medium}
+  discharge_summary:
+    - {code: BILL_STAMP_MISSING, severity: critical}
+    - {code: PATIENT_NAME_MISMATCH, severity: critical}
+stages: [draft_prepared, documents_verified, submitted, acknowledged, under_review, query_raised, decision, payment_credited]
+draft_stage: draft_prepared
+submit_stages: [documents_verified, submitted]
+insurer_actor: tpa
+# IRDAI: settle or reject within 30 days of the last necessary document (45 if investigated).
+deadlines:
+  - {stage: decision, from: submitted, hours: 720}
+settlement_stage: decision
+has_overdue_interest: true
+escalation_channels: [grievance_cell, bima_bharosa]

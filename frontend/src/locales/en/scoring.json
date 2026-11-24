@@ -1,0 +1,11 @@
+{
+  "title": "Readiness score",
+  "points": "{{got}} / {{max}}",
+  "component": {
+    "completeness": "Documents uploaded",
+    "validity": "Documents pass checks",
+    "coverage": "Covered by the policy",
+    "timeliness": "Reported on time"
+  },
+  "disclaimer": "This shows how ready your paperwork is. It is not a prediction of approval."
+}

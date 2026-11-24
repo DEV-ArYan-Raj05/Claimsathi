@@ -1,0 +1,94 @@
+{
+  "track": {
+    "health": "Health",
+    "crop": "Crop",
+    "switcherLabel": "Choose insurance type"
+  },
+  "language": {
+    "switchTo": "Switch to Hindi",
+    "other": "हिंदी"
+  },
+  "nav": {
+    "main": "Main",
+    "home": "Home",
+    "policies": "Policies",
+    "claims": "Claims",
+    "voice": "Voice",
+    "settings": "Settings",
+    "skip": "Skip to content"
+  },
+  "action": {
+    "retry": "Try again",
+    "back": "Back"
+  },
+  "state": {
+    "errorTitle": "This didn't load",
+    "errorBody": "Something went wrong on our side. Your data is safe.",
+    "offlineTitle": "You're offline",
+    "offlineBody": "Connect to the internet and try again.",
+    "offlineBanner": "No internet. Uploads will wait and send when you're back online."
+  },
+  "sequence": {
+    "loading": "Loading the drawing",
+    "step": "{{n}} of {{total}}"
+  },
+  "score": {
+    "aria": "Readiness score {{score}} out of 100",
+    "band": {
+      "ready": "Ready to send",
+      "fix": "Fix a few things",
+      "high_risk": "High risk of rejection"
+    }
+  },
+  "countdown": {
+    "overdue": "Deadline passed {{hours}} h {{minutes}} m ago"
+  },
+  "stage": {
+    "draft_prepared": "Draft prepared",
+    "documents_verified": "Documents checked by app",
+    "submitted": "Sent to insurer",
+    "acknowledged": "Acknowledged",
+    "under_review": "Under review",
+    "query_raised": "Query raised",
+    "decision": "Decision",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "payment_credited": "Payment credited",
+    "loss_reported": "Loss reported",
+    "intimation_forwarded": "Intimation forwarded",
+    "surveyor_appointed": "Surveyor appointed",
+    "joint_survey_done": "Joint survey done",
+    "loss_assessed": "Loss assessed",
+    "payment_initiated": "Payment via bank / DBT",
+    "overdue": "Overdue",
+    "not_started": "Not started"
+  },
+  "severity": {
+    "critical": "Must fix",
+    "high": "Should fix",
+    "medium": "Check",
+    "missing": "Missing"
+  },
+  "alerts": {
+    "overridden": "Sent anyway: {{reason}}"
+  },
+  "job": {
+    "canLeave": "You can leave this screen. We'll keep working and show the result here.",
+    "step": {
+      "reading": "Reading the pages",
+      "extracting": "Finding clauses and limits",
+      "review": "Ready for you to check",
+      "checking": "Checking stamps, signatures and totals",
+      "building": "Building the claim pack"
+    }
+  },
+  "upload": {
+    "camera": "Take photo",
+    "file": "Choose file",
+    "waiting": "{{name}} is waiting for network",
+    "problem": {
+      "too_large": "This file is over 20 MB. Take a photo instead.",
+      "unsupported": "Use a JPG, PNG, HEIC photo or a PDF."
+    }
+  }
+}
